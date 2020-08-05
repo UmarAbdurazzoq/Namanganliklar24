@@ -1,0 +1,435 @@
+/* rubik-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url('../fonts/rubik-v9-latin_cyrillic-regular.woff2') format('woff2'), 
+	url('../fonts/rubik-v9-latin_cyrillic-regular.woff') format('woff'); 
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+	src: url('../fonts/rubik-v9-latin_cyrillic-500.woff2') format('woff2'),
+	url('../fonts/rubik-v9-latin_cyrillic-500.woff') format('woff'); 
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url('../fonts/rubik-v9-latin_cyrillic-700.woff2') format('woff2'),
+	url('../fonts/rubik-v9-latin_cyrillic-700.woff') format('woff'); 
+}
+
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Rubik", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #222
+}
+header {
+	background-color: #F6F6F9;
+	border-top: #295093 4px solid;
+}
+
+.container {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*header qismi boshlanishi*/
+
+.header-wrapper {
+	padding-top: 42px;
+	padding-bottom: 23px;
+}
+
+.main-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.left-menu,
+.right-menu{
+	display: flex;
+	align-items: center;
+}
+
+.main-link {
+	display: inline-flex;
+	padding: 4px 8px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #295091;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+	box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+	border-radius: 4px;
+	background-color: #FFFFFF;
+}
+
+.valyuta{
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 258px;
+	list-style: none;
+	margin-left: 17px;
+}
+
+.currency-icon {
+	font-weight: bold;
+	line-height: 19px;
+	color: #285193;
+}
+
+.currency-value {
+	color: #7A7A7A;
+}
+
+.right-menu a,button{
+	cursor: pointer;
+	outline: none;
+	border: none;
+	margin-left: 15px;
+}
+
+.magnify,
+.rus,
+.telegram{
+	font-weight: 500;
+	line-height: 19px;
+}
+
+.magnify,
+.rus {
+	padding: 7px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+} 
+
+.magnify{
+	width: 38px;
+}
+
+.rus {
+	width: 65px;
+}
+
+.rus span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rus img{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 5px;
+	border: 0.1px solid grey;
+}
+
+.telegram {
+	display: inline-flex;
+	padding: 10px 12px;
+	justify-content: center;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 19px;
+	background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+	border-radius: 5px;
+}
+.telegram:hover {
+	background: linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
+}
+.telegram img {
+	margin-right: 10px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 500;
+	list-style-type: none;
+	background-color: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+	border-radius: 5px;
+	padding: 22px 25px;
+	margin-top: 40px;
+}
+
+.nav a {
+	text-decoration: none;
+	font-size: 19px;
+	line-height: 23px;
+	color: #515151;
+	position: relative;
+	transition: text-shadow 0.2s ease;
+}
+.nav a::before {
+	content:'';
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 24px;
+	width: 0px;
+	height: 3px;
+	background-color: grey;
+	border-radius: 50px;
+	transition: all 0.5s ease;
+}
+.nav a:hover:before {
+	width: 100%;
+}
+.nav a:focus {
+	color: #2400d6;
+}
+.nav a:active {
+	color: #000000;
+}
+
+.ads1 {
+	margin-top: 20px;
+	border: 1px solid #E0E0E0;
+	overflow: hidden;
+}
+
+.ads1 a {
+	display: flex;
+}
+
+/*koronovirus info blogi*/
+
+
+.corono-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 500;
+	padding: 40px 35px;
+	padding-right: 70px;
+	list-style-type: none;
+	background-color: #F6F6F9;
+	border-radius: 5px;
+	margin-top: 22px;
+}
+.corono-info-mini-block {
+	border-left: 2px #EB5569 solid;
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	padding-left: 30px;
+	padding-right: 10PX;
+}
+.corono-info-mini-block img {
+	margin-right: 19px;
+}
+.corona-text-side span {
+	display: flex;
+}
+.corona-text-side  .benom {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.corona-text-side .corona-rate {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.corona-infected .benom {
+	color: #DB0000;
+}
+.corona-cured .benom {
+	color: #05B135;
+}
+.corona-dead .benom {
+	color: #000000;
+}
+
+.corona-heading {
+	padding: 0;
+	border: none;
+}
+.corona-heading .corona-text-side {
+	width: 240px;
+	font-size: 20px;
+	line-height: 24px;
+	margin-left: 20px;
+	margin-right: 10px;
+} 
+
+.foot{
+	background: #295093;
+}
+.footer{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	align-items: center;
+	justify-content: center;
+}
+.first_floor{
+	align-items: center;
+	padding-top:18px;
+	padding-bottom:18px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid 3px #133C82;
+}
+.namanganliklar24_link{
+	width: 194px;
+	height: 38px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	padding : 11px 12px 6px 9px;
+	background: #133C82;
+	border-radius: 5px;
+}
+.subscription{
+	align-items: center;
+	display: flex;
+}
+.telegram_subscribe_word{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+.subscription a{
+	width: 132px;
+	align-items: center;
+	text-decoration: none;
+	background: #FFFFFF;
+	border-radius: 5px;
+	padding:9px 10px;
+	display: flex;justify-content: space-between;
+	margin-left: 17px;
+}
+.subscription_word_ru{
+	font-size: 14px;
+	line-height: 17px;
+	color: #295093;
+}
+.second_floor{
+	display: flex;
+	justify-content: flex-start;
+}
+.about_the_site{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	width: 365px;
+}
+.another a{
+	margin-left: 111px;
+	text-decoration: none;
+	font-family: "Rubik";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+.another a:hover{
+	text-decoration: underline;
+}
+.second_another a{
+	margin-left: 115px;
+	text-decoration: none;
+	font-family: "Rubik";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+.second_another a:hover{
+	text-decoration: underline;
+}
+.modal-main{
+	display: none;
+	width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.modal{
+	z-index: 5;
+	align-items: center;
+	position: fixed;
+	width: 819px;
+	height: 231px;
+	left: 310px;
+	top: 281px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.25);
+	border-radius: 5px;
+}
+.modal-span{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(216, 216, 216, 0.3);
+}
+.modal p{
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 31px;
+	text-align: center;
+	color: #295093;
+}
+.modal div{
+	width: 145px;
+	margin: 40px auto;
+}
+.modal button{
+	position: absolute;
+	border: none;
+	top: 10px;
+	right: 10px;
+	background-color: #fff;
+}
