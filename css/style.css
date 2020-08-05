@@ -47,7 +47,16 @@ header {
 	background-color: #F6F6F9;
 	border-top: #295093 4px solid;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
 	width: 1200px;
 	margin-right: auto;
